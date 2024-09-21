@@ -31,7 +31,8 @@ Welcome to the **2-Do Flutter App** – your ultimate productivity tool that com
 ## Download the APK
 You can download the latest version of the app from the link below:
 
-[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/blob/main/build/app/outputs/flutter-apk/app-release.apk)
+[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/v1.0/app-release.apk)
+
 
 ## How to Get Started
 1. Clone this repository:
