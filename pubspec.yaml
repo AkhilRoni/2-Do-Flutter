@@ -36,6 +36,8 @@ dependencies:
   cloud_firestore: ^5.4.0
   flutter_launcher_icons: ^0.13.1
   provider: ^6.1.2
+  flutter_local_notifications: ^13.0.0
+  audioplayers: ^6.1.0
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -79,6 +81,12 @@ flutter:
     - assets/mode.json
     - assets/logoanime.json
     - lib/icons/timer.png
+    - assets/sounds/simple.mp3
+    - assets/sounds/happy.wav
+    - assets/sounds/kpop.mp3
+    - assets/sounds/bravo.wav
+    - assets/sounds/ding.wav
+    - assets/sounds/meow.wav
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

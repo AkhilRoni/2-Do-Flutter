@@ -15,22 +15,31 @@ import 'dart:math';
 
 class timer extends StatefulWidget {
   final List<ToDo> todosList;
+  final List<List> tones = [
+    [' Simple ', '../assets/sounds/simple.mp3'],
+    [' Happy ', '../assets/sounds/happy.wav'],
+    [' K-pop ', '../assets/sounds/kpop.mp3'],
+    [' Bravo ', '../assets/sounds/bravo.wav'],
+    [' Ding ', '../assets/sounds/ding.wav'],
+    [' Meow ', '../assets/sounds/meow.wav'],
+  ];
 
-  const timer({super.key, required this.todosList});
+  timer({super.key, required this.todosList});
 
   @override
   State<timer> createState() => _timerState();
 }
 
 class _timerState extends State<timer> {
-  String currentPhrase = getPhrase(); // Initial quote
+  String currentPhrase = getPhrase();
+  int currentToneIndex = 0;
 
   void openDrawer(BuildContext context) {
     setState(() {
-      currentPhrase = getPhrase(); // Update the quote
+      currentPhrase = getPhrase();
     });
 
-    Scaffold.of(context).openDrawer(); // Open the drawer
+    Scaffold.of(context).openDrawer();
   }
 
   @override
@@ -135,7 +144,7 @@ class _timerState extends State<timer> {
         body: Center(
           child: Column(
             children: [
-              const Padding(padding: EdgeInsets.only(top: 40)),
+              const Padding(padding: EdgeInsets.only(top: 35)),
               Stack(
                 alignment: Alignment.center,
                 children: [
@@ -161,7 +170,7 @@ class _timerState extends State<timer> {
                 ],
               ),
               const SizedBox(
-                height: 40,
+                height: 50,
               ),
               // STOP AND PLAY BUTTON
               Row(
@@ -192,7 +201,7 @@ class _timerState extends State<timer> {
                       onPressed: () {
                         timeprovider.isRunning
                             ? timeprovider.pauseTimer()
-                            : timeprovider.startTimer();
+                            : timeprovider.startTimer(currentToneIndex);
                       },
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
@@ -216,7 +225,7 @@ class _timerState extends State<timer> {
                 ],
               ),
               const SizedBox(
-                height: 40,
+                height: 50,
               ),
               //STUDY AND BREAKK TIMER BUTTONS
 
@@ -266,21 +275,64 @@ class _timerState extends State<timer> {
 
               //CUSTOM BUTTON
 
-              ElevatedButton(
-                  onPressed: () {
-                    _showTimePicker(context, timeprovider);
-                  },
-                  style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15)),
-                      padding: const EdgeInsets.all(5),
-                      alignment: Alignment.center,
-                      backgroundColor: Theme.of(context).colorScheme.primary),
-                  child: Text(' Custom ',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 35,
-                          color: Theme.of(context).colorScheme.tertiary)))
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                      onPressed: () {
+                        _showTimePicker(context, timeprovider);
+                      },
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)),
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.center,
+                          backgroundColor:
+                              Theme.of(context).colorScheme.primary),
+                      child: Text(' Custom ',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 35,
+                              color: Theme.of(context).colorScheme.tertiary))),
+                  Container(
+                    width: 15,
+                  ),
+                  // ignore: avoid_unnecessary_containers
+                  Container(
+                    child: Icon(
+                      Icons.music_note_outlined,
+                      color: Theme.of(context).colorScheme.tertiary,
+                      size: 40,
+                    ),
+                  ),
+                  Container(
+                    width: 2,
+                  ),
+                  ElevatedButton(
+                      onPressed: () {
+                        setState(() {
+                          currentToneIndex =
+                              ((currentToneIndex + 1) % widget.tones.length)
+                                  .toInt();
+                        });
+                      },
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15)),
+                          padding: const EdgeInsets.all(5),
+                          alignment: Alignment.center,
+                          backgroundColor:
+                              Theme.of(context).colorScheme.primary),
+                      child: Text(
+                          widget.tones[currentToneIndex]
+                              [0], // Get tone name from list
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 35,
+                            color: Theme.of(context).colorScheme.tertiary,
+                          ))),
+                ],
+              )
             ],
           ),
         ),
