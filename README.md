@@ -1,48 +1,66 @@
-# Todo App
+# 2-Do Flutter App
 
-## Introduction
-
-The Todo App is a simple and intuitive application developed using Flutter and Firebase. It allows users to manage their tasks efficiently with features like adding, deleting, and marking tasks as complete. Real-time synchronization ensures your tasks are always up-to-date.
+Welcome to the **2-Do Flutter App** – your ultimate productivity tool that combines various features to help you stay organized and motivated throughout the day!
 
 ## Features
 
-- **Add Tasks**: Easily add new tasks to your list.
-- **Delete Tasks**: Remove tasks that are no longer needed.
-- **Mark Tasks as Complete**: Track your progress by marking tasks as complete.
-- **Real-Time Synchronization**: Your tasks are synchronized with Firebase in real-time.
+### 1. **Task Management (With Firebase Integration)**
+- Manage all your daily tasks effortlessly!
+- Store and retrieve tasks using **Firebase**, making your to-do list available across devices.
+- Add, update, and delete tasks with real-time updates synced to Firebase.
 
-## Installation
+### 2. **Timer Feature**
+- A built-in timer to help you focus on your tasks.
+- Set specific durations for your work sessions and take breaks effectively.
 
-To set up the Todo App on your local machine, follow these steps:
+### 3. **Timetable Image**
+- Upload an image of your weekly timetable to have quick access to your schedule.
+- Keep track of classes, meetings, or any other recurring events visually.
 
-1. **Clone the Repository**:
-    ```bash
-    git clone https://github.com/your-username/todo-app-flutter.git
-    ```
+### 4. **Theme Switching (Dark Mode/Light Mode)**
+- Seamlessly switch between **Dark Mode** and **Light Mode**.
+- Experience a smooth, animated transition when changing themes.
+- Personalize the app to your preference, whether you're working during the day or night.
 
-2. **Navigate to the Project Directory**:
-    ```bash
-    cd todo-app-flutter
-    ```
+### 5. **Motivational Sidebar**
+- The app also includes a **sidebar for easy navigation**. Switch between different features, view your timetable, tasks, and access the timer, all while staying motivated.
+- Stay inspired with a sidebar that features **motivational phrases**.
+- These quotes will keep you going when you're feeling overwhelmed or unmotivated.
+- Fresh motivational phrases across multiple pages, making the experience engaging throughout.
 
-3. **Install Dependencies**:
-    ```bash
-    flutter pub get
-    ```
+## Download the APK
+You can download the latest version of the app from the link below:
 
-4. **Run the App**:
-    ```bash
-    flutter run
-    ```
+[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/2-Do_V1.0.0/app-release.apk)
 
-## APK Download
 
-You can also download and install the APK file directly on your Android device:
+## How to Get Started
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/AkhilRoni/2-Do-Flutter.git
+   ```
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+3. Set up your Firebase project and configure it with the app.
+4. Run the app:
+   ```bash
+   flutter run
+   ```
 
-- **Download APK**: [Download APK](https://github.com/your-username/todo-app-flutter/releases/download/v1.0/app-release.apk)
 
-*Replace the link with the actual link to your APK file.*
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+Feel free to fork this repo and contribute! Open a pull request if you think there are improvements or features to be added.
+
+
+
+
+
+
+
+
+
