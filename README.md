@@ -28,11 +28,6 @@ Welcome to the **2-Do Flutter App** – your ultimate productivity tool that com
 - These quotes will keep you going when you're feeling overwhelmed or unmotivated.
 - Fresh motivational phrases across multiple pages, making the experience engaging throughout.
 
-## Download the APK
-You can download the latest version of the app from the link below:
-
-[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/2-Do_V1.0.0/app-release.apk)
-
 
 ## How to Get Started
 1. Clone this repository:
@@ -50,6 +45,10 @@ You can download the latest version of the app from the link below:
    ```
 
 
+## Download the APK
+You can download the latest version of the app from the link below:
+
+[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/2-Do_V1.0.0/app-release.apk)
 
 
 
