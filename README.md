@@ -52,7 +52,7 @@ You can download the latest version of the app from the link below:
 
 Lava Blaze 5G Pro Users may use the link below for a more optimised version:
 
-[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/V1.0.0-lava/app-release.apk)
+[Download 2-Do APK for lava](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/V1.0.0-lava/app-release.apk)
 
 
 
