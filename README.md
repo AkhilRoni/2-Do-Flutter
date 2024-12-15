@@ -48,12 +48,7 @@ Welcome to the **2-Do Flutter App** – your ultimate productivity tool that com
 ## Download the APK
 You can download the latest version of the app from the link below:
 
-[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/2-Do_V1.0.0/app-release.apk)
-
-Lava Blaze Pro 5G Users may use the link below for a more optimised version:
-
-[Download 2-Do APK for lava](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/V1.0.0-lava/app-release.apk)
-
+[Download 2-Do APK](https://github.com/AkhilRoni/2-Do-Flutter/releases/download/v1.0.1/app-release.apk)
 
 
 ## Contributing
